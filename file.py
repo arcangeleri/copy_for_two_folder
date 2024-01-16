@@ -93,20 +93,14 @@ def delete_from_map(delete_map : dict):
     
     
 
-def main(arg1 : str , arg2: str):
+def main():
     if len(sys.argv) == 3:
         path1 = sys.argv[1]
         path2 = sys.argv[2]
-    else:
-        if not arg1 or not arg2:
-            sys.exit()
-        else:
-            path1 = arg1
-            path2 = arg2
 
     # for debug test
-    # path1 = "C:\src_dir"
-    # path2 = "C:\dest_dir"
+    # path1 = "C:\src_folder"
+    # path2 = "C:\dest_folder"
 
     file_dict1 = get_file_info_map(path1)
     file_dict2 = get_file_info_map(path2)
@@ -120,7 +114,5 @@ def main(arg1 : str , arg2: str):
     copy_from_map(diff_list, path1, path2)
 
 if __name__ == "__main__":
-    # for debug test
-    #main("C:\src_dir", "C:\dest_dir")
     main()
      
