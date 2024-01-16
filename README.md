@@ -3,4 +3,4 @@
 * 만든 날짜 및 수정한 날짜에 의한 업데이트를 방지하기 위해서 사용함
 
 ### 사용법
-* `python file.py a_src_folder b_dest_folder
+* `python file.py a_src_folder b_dest_folder`
